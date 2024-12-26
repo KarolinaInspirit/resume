@@ -162,6 +162,7 @@ a {
 
 /*footer*/
 
+
 .footer {
     background-color: rgb(128, 1, 71);
     height: 80px;
@@ -175,4 +176,82 @@ a {
 
 .year {
     color: #e0e0e0
+}
+
+
+/*adapt*/
+
+
+@media screen and (max-width: 1000px) {
+
+    body {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-column, .right-column {
+        width: 85%;
+    }
+
+    .left-column {
+        padding: 50px 60px;
+    }
+
+    .image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .image img {
+        width: 70%;
+    }
+
+    .contacts,
+.skills, .key-strengths {
+    padding: 5px 0px;
+}
+
+    h1 {
+        font-size: 40px;
+        padding-top: 20px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    .right-column {
+        border-left: none;
+    }
+
+    .work-list {
+        min-height: 250px;
+    }
+
+    .experience-list p {
+        font-size: 12px;
+    }
+
+    .footer {
+        background-color: rgb(128, 1, 71);
+        height: 40px;
+        max-width: 85%;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .left-column, .right-column {
+        padding: 40px;
+    }
+
 }
