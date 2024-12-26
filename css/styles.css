@@ -1,0 +1,178 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Questrial', 'Raleway', sans-serif;
+    font-size: 21px;
+    line-height: 27px;
+    background: rgb(150, 141, 161);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 100px 0px;
+}
+
+.container {
+    display: flex;
+    max-width: 1000px;
+    min-width: 320px;
+}
+
+h1 {
+    font-size: 70px;
+    color: rgb(128, 1, 71);
+    padding-top: 40px;
+    line-height: 70px;
+}
+
+h2 {
+    font-size: 32px;
+    color: rgb(128, 1, 71);
+    line-height: 35px;
+    padding-bottom: 24px;
+}
+
+h3 {
+    font-weight: bold;
+    line-height: 38px;
+}
+
+a {
+    list-style: none;
+    text-decoration: none;
+    transition: 2s;
+}
+
+
+/*left side*/
+
+
+.left-column {
+    padding: 60px;
+    width: 40%;
+    background: rgb(179,240,255);
+    background: radial-gradient(circle, rgba(179,240,255,1) 0%, rgba(107,168,232,1) 100%);
+    display: flex;
+    flex-direction: column;
+}
+
+.image img {
+    background: linear-gradient(45deg, rgb(128, 1, 60), rgb(117, 10, 103));
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0px 0px 22px 2px rgb(128, 1, 71);
+    border: rgb(255, 255, 133) dotted 7px;
+}
+
+.contacts,
+.skills, .key-strengths {
+    padding: 20px 0px;
+}
+
+.sites {
+    list-style: none;
+}
+
+.sites a {
+    text-decoration: none;
+    color: rgb(128, 1, 71);
+    transition: .5s;
+}
+
+.sites a:hover {
+    text-decoration: underline;
+    color: rgb(26, 26, 26);
+    transition: .5s;
+}
+
+.skills-list {
+    padding-left: 40px;
+}
+
+
+/*right side*/
+
+
+.right-column {
+    border-left: dotted white 65px;
+    width: 60%;
+    background: #e0e0e0;
+    padding: 15px 60px 60px;
+}
+
+.about-me {
+    padding-top: 40px;
+}
+
+.about-me a {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(128, 1, 71);
+}
+
+.about-me a:hover {
+    text-decoration: none;
+    color: rgb(26, 26, 26);
+}
+
+.personal-info a {
+    color: rgb(128, 1, 71);
+    text-decoration: underline;
+}
+
+.personal-info a:hover {
+    color: rgb(26, 26, 26);
+}
+
+.work-list {
+    min-height: 320px;
+}
+
+.experience-list {    
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.experience-list li {
+    list-style-type: none;
+}
+
+.experience-list li:before {
+    content: "✓"; 
+    padding-right: 10px;
+   }
+
+.experience-list p {
+    color: rgb(116, 116, 116);
+    font-size: 18px;
+    margin-left: 27px;
+}
+
+.code {
+    font-size: 22px;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*footer*/
+
+.footer {
+    background-color: rgb(128, 1, 71);
+    height: 80px;
+    width: 1000px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style: none;
+    color: rgb(224, 224, 224);
+}
+
+.year {
+    color: #e0e0e0
+}
